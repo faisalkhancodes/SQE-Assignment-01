@@ -39,12 +39,3 @@
 - **E11**: N8 → N2 (Repeat loop)
 - **E12**: N9 → N10 (Finish)
 
-## 4. Folder Fix (Action Required)
-If your GitHub Actions tab is empty, it is likely because the folder is named incorrectly. Run this exact command in your terminal within the project directory to fix it:
-`Rename-Item -Path "SQE.github" -NewName ".github"`
-
-## 5. Green Tick Verification (Automation)
-To verify that your automation is working correctly:
-1. **Push Code**: After renaming the folder and committing your changes, push them to GitHub.
-2. **Actions Tab**: Go to your repository on GitHub and click the **Actions** tab.
-3. **Check Status**: You should see a workflow run in progress. Once it finishes, a **Green Checkmark (✅)** will appear next to the commit hash if all tests pass. This proves that your MSTest suite and CI/CD pipeline are functioning perfectly.
